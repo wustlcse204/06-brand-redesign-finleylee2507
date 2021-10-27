@@ -1,24 +1,32 @@
-body{
-   font-family: 'Open Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+body {
+    font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: #AAABB8; */
+    /* background-color: #f5f5f5; */
 }
 
-html,body{
-
+html, body {
     height: 100%;
+    
 }
-a{
+
+a {
     text-decoration: none;
     color: #000000;
 }
 
-#piazza-logo{
-    height:80px;
+#piazza-logo {
+    /* float:left; */
+    height: 80px;
     margin-top: -20px;
+    margin-right:5%;
+    margin-left:1%;
 }
 
-.nav-bar{
-    display:flex;
+header{
+    display: flex;
     justify-content: space-around;
+    
+    
     background-color: #fff;
     width: 100%;
     height: 45px;
@@ -26,45 +34,61 @@ a{
     border-bottom: 1px solid rgba(36, 35, 35, 0.098);
     top: 0;
     left: 0;
+    right:0;
     padding: 14px 2px 14px 2px;
     z-index: 3;
-
+    text-align: center;
 }
 
-.nav-bar-link{
-    font-size: 20px;
+.nav-bar-group1 {
+    display:flex;
+    justify-content: space-between;
+   width:60%;
     
 }
 
-.signup-login-button {
-    border: 1px solid rgb(103, 174, 240);
-    border-radius: 20px;
-    padding: 10px 10px;
-    background-color: rgb(134, 188, 238);
-    margin-top: -10px;
-   
+.nav-bar-group2{
+    display:flex;
+    gap:10px;
 }
 
-button#sign-up {
-    margin-right: 10px;
+.nav-bar-link {
+    /* float:left; */
+    font-size: 20px;
+    font-weight: 800;
+    margin-right:3%;
+  
+    
 }
+
+
+.signup-login-button {
+    border: 1px solid rgb(103, 174, 240);
+    border-radius: 3px;
+    padding: 10px 15px;
+    background-color: rgb(134, 188, 238);
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: -5px;
+    height: 40px;
+  
+}
+
 
 .landing-page {
     background-image: url('./pics/light-blue-background2.jpg');
     position: absolute;
-    width: 100%;
+
     left: 0;
     right: 0;
     top: 45px;
-
     height: 50rem;
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
-  
 }
 
-.landing-page p{
+.landing-page p {
     text-align: center;
 }
 
@@ -78,25 +102,22 @@ p.landing-page-title {
 }
 
 p.landing-page-caption {
-    font-size: 22px;
+    font-size: 25px;
     color: #595555;
     position: relative;
     top: 30px;
 }
 
 .landing-page-video {
-   
     width: 40%;
     height: 24rem;
     margin-top: -6%;
-    
 }
 
-.landing-page-inner-wrapper{
-    display:flex;
+.landing-page-inner-wrapper {
+    display: flex;
     justify-content: space-around;
-    margin-top:15%;
-    
+    margin-top: 15%;
 }
 
 p#why-piazza {
@@ -121,26 +142,287 @@ p#why-piazza {
     font-size: 16px;
     margin-top: 30px;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 #button-students {
-   
     background-color: #f6d8ac;
-    border:1px solid #f6d8ac;
+    border: 1px solid #f6d8ac;
 }
 
 #button-profs {
     background-color: #7e9a9a;
-    border:1px solid #7e9a9a;
+    border: 1px solid #7e9a9a;
 }
 
-#button-view-class{
+#button-view-class {
     background-color: #8ec3eb;
     border: 1px solid #8ec3eb;
 }
 
-.landing-page-video iframe{
+.landing-page-video iframe {
+    height: 100%;
+    width: 100%;
+}
 
-    height:100%;
+#user-stories-first-line {
+    margin-top: 60rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 1000;
+    /* margin-left: 5%; */
+    color: #353434;
+    text-align: center;
+}
+
+#user-stories-second-line {
+    font-size: 25px;
+    color: #595555;
+    text-align: center;
+}
+
+.stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    gap:50px;
+}
+
+.story-image {
+    width: 35rem;
+    margin: 30px;
+    transition: .5s ease;
+}
+
+.story-overlay {
+    position: absolute;
+    text-align: center;
+    margin-top: -37.08rem;
+    left: 30px;
+    width: 35rem;
+    height: 35rem;
+    background-color: rgb(54, 52, 52);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.story-overlay:hover {
+    opacity: 0.75;
+}
+
+.story-wrapper {
+    position: relative;
+}
+
+.story-name {
+    color: #fafafa;
+    font-size: 30px;
+    font-weight: 800;
+    position: relative;
+    top: 20%;
+}
+
+.story-subject {
+    color: #fafafa;
+    position: relative;
+    top: 25%;
+}
+
+.story-story {
+    color: #fafafa;
+    position: relative;
+    top: 25%;
+}
+
+.user-stories {
+    margin-bottom: 10rem;
+}
+
+.subject-first-line {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 1000;
+    color: #353434;
+    text-align: center;
+}
+
+.subject-second-line {
+    font-size: 25px;
+    color: #595555;
+    text-align: center;
+}
+
+.subject-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subject-icons a {
+    width: 25rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.subject-icons a:hover {
+    background-color: #AAABB8;
+    border-radius: 10px;
+}
+
+.subject-icon {
+    width: 9rem;
+    margin: 5rem;
+}
+
+#computer-science-icon {
+    width: 120px;
+    padding: 12px;
+}
+
+.subject-text {
+    font-weight: 300;
+}
+
+.media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom:50px;
+}
+
+.media-icons div {
+    margin-top: 5rem;
+    height: 150px;
+    width: 150px;
+}
+
+.media-icon {
+    width: 150px;
+}
+
+#entrepreneur-logo {
+    padding: 46.62px 0px 46.62px 0px;
+}
+
+#nyt-logo {
+    padding: 14.945px 0px 14.945px 0px;
+}
+
+#forbes-logo {
+    padding: 55.376px 0px 55.376px 0px;
+}
+
+#npr-logo {
+    padding: 55.44px 0px 55.44px 0px;
+}
+
+#chronicle-logo {
+    padding: 35.085px 0px 35.085px 0px;
+}
+
+#us-news-logo {
+    padding: 49.46px 0px 49.46px 0px;
+}
+
+.news-title {
+    margin-top: 10rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 1000;
+    color: #353434;
+    text-align: center;
+}
+
+#fblogo, #twitterlogo {
+    width: 30px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(35, 49, 59);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  position: absolute;
+  left:0;
+  width:100%;
+}
+
+footer p{
+    color:#ffffff;
+}
+
+
+/* for smaller screens  */
+@media screen and (min-width: 1094px) and (max-width:1260px)  {
+    
+.nav-bar-link{
+    font-size:16px;
+}
+
+header{
+    height:30px;
+}
+
+#piazza-logo{
+    height:60px;
+  
+   position: relative;
+    top: 4px;
+}
+
+.signup-login-button {
+    border: 1px solid rgb(103, 174, 240);
+    border-radius: 3px;
+    padding: 3px 10px;
+    background-color: rgb(134, 188, 238);
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: -5px;
+    height: 30px;
+}
+
+}
+
+@media screen and (max-width:1094px){
+header{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+    height:200px;
+    text-align: center;
+   align-items: center;
+    
+}
+
+#piazza-logo{
+    margin-top:0px;
+}
+
+.nav-bar-group1{
     width:100%;
+}
+.nav-bar-group2{
+    margin-top:30px;
+}
+.landing-page{
+    top:200px;
+    height:80rem;
+}
+
+.landing-page-inner-wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-page-video{
+    width:80%;
+    margin-bottom: 100px;
+}
+
+.user-stories{
+    margin-top: 100rem;
+}
 }

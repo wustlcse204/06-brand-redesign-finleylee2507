@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Piazza</title>
     <meta name="description" content="Piazza">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 </head>
@@ -15,20 +15,29 @@
 <body>
 
 
-    <div class="nav-bar">
+    <header class="nav-bar">
 
         <a href="#"><img src="https://seekvectorlogo.com/wp-content/uploads/2018/12/piazza-technologies-vector-logo.png"
                 alt="piazza-logo" id="piazza-logo" /></a>
-        <a href="#" class="nav-bar-link">Product</a>
-        <a href="#" class="nav-bar-link">In Professors' Words</a>
-        <a href="#" class="nav-bar-link">Pricing</a>
-        <a href="#" class="nav-bar-link">Support</a>
-        <a href="#" class="nav-bar-link">About Us</a>
-        <a href="#" class="nav-bar-link">Piazza Talent</a>
-        <div class="signup-login"><button class="signup-login-button" id="sign-up">Sign Up</button><button
-                class="signup-login-button" id="log-in">Login</button></div>
+        <div class="nav-bar-group1">
 
-    </div>
+            <a href="#" class="nav-bar-link">Product</a>
+            <a href="#" class="nav-bar-link">In Professors' Words</a>
+            <a href="#" class="nav-bar-link">Pricing</a>
+            <a href="#" class="nav-bar-link">Support</a>
+            <a href="#" class="nav-bar-link">About Us</a>
+            <a href="#" class="nav-bar-link">Piazza Talent</a>
+
+        </div>
+
+        <div class="nav-bar-group2">
+            <button class="signup-login-button" id="sign-up">Sign Up</button><button class="signup-login-button"
+                id="log-in">Login</button>
+        </div>
+
+
+
+    </header>
 
     <div class="landing-page">
         <div class="landing-page-title">
@@ -38,8 +47,7 @@
 
         <div class="landing-page-inner-wrapper">
             <div class="landing-page-video">
-                <iframe src="https://www.youtube.com/embed/2jLSiN8E18w"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/2jLSiN8E18w" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -76,57 +84,136 @@
         </p>
         <p id="user-stories-second-line">Click on an instructor to see why</p>
 
-        <div class="story-container" id="story1">
-            <img src="./pics/random-girl1.jpg" alt="Jennifer Lawrence">
-            <p>Jennifer Lawrence</p>
-            <p>Mathamatics</p>
-            <p>"Many of the students who ask questions on Piazza just wouldn't get the opportunity to ask them
-                otherwise."</p>
-        </div>
-        <div class="story-container" id="story2">
-            <img src="./pics/random-guy1.jpg" alt="Walter White">
-            <p>Walter White</p>
-            <p>Chemistry</p>
-            <p>“I think it impoverishes the learning environment if students don't talk to other students. Piazza makes
-                it very easy to get a discussion going.”</p>
-        </div>
-        <div class="story-container" id="story3">
-            <img src="./pics/random-girl2.jpg" alt="Amy Winehouse">
-            <p>Amy Winehouse</p>
-            <p>Music</p>
-            <p>“It’s the center for communicating with my students, for keeping everybody up to date and answering
-                questions.”</p>
+        <div class="stories-container">
+
+            <div class="story-wrapper">
+                <a href="https://www.youtube.com/watch?v=iik25wqIuFo&ab_channel=Rickroll%2Cbutwithadifferentlink">
+                    <img src="./pics/random-girl1.jpg" alt="Jennifer Lawrence" class="story-image">
+                    <div class="story-overlay">
+                        <p class="story-name">Jennifer Lawrence</p>
+                        <p class="story-subject">Mathamatics</p>
+                        <p class="story-story">"Many of the students who ask questions on Piazza just wouldn't get the
+                            opportunity to ask them
+                            otherwise."</p>
+                    </div>
+                </a>
+
+
+
+
+
+            </div>
+
+            <div class="story-wrapper">
+
+                <a href="https://www.youtube.com/watch?v=iik25wqIuFo&ab_channel=Rickroll%2Cbutwithadifferentlink"> <img
+                        src="./pics/random-guy1.jpg" alt="Walter White" class="story-image">
+                    <div class="story-overlay">
+                        <p class="story-name">Walter White</p>
+                        <p class="story-subject">Chemistry</p>
+                        <p class="story-story">“I think it impoverishes the learning environment if students don't talk
+                            to other students. Piazza makes
+                            it very easy to get a discussion going.”</p>
+                    </div>
+                </a>
+
+
+
+
+
+            </div>
+
+            <div class="story-wrapper">
+
+                <a href="https://www.youtube.com/watch?v=iik25wqIuFo&ab_channel=Rickroll%2Cbutwithadifferentlink"> <img
+                        src="./pics/random-girl2.jpg" alt="Amy Winehouse" class="story-image">
+
+                    <div class="story-overlay">
+                        <p class="story-name">Amy Winehouse</p>
+                        <p class="story-subject">Music</p>
+                        <p class="story-story">“It’s the center for communicating with my students, for keeping
+                            everybody up to date and answering
+                            questions.”</p>
+                    </div>
+                </a>
+
+
+
+
+
+            </div>
+
+            <div class="story-wrapper">
+                <a href="https://www.youtube.com/watch?v=iik25wqIuFo&ab_channel=Rickroll%2Cbutwithadifferentlink"> <img
+                        src="./pics/random-guy2.jpg" alt="Sheldon Cooper" class="story-image">
+
+                    <div class="story-overlay">
+                        <p class="story-name">Sheldon Cooper</p>
+                        <p class="story-subject">Physics</p>
+                        <p class="story-story">“Nowadays, colleagues tell me that their students always ask, 'Are we
+                            going to use Piazza?' It's sort of
+                            an expected thing now.”</p>
+                    </div>
+                </a>
+
+
+
+            </div>
 
         </div>
-        <div class="story-container" id="story4">
-            <img src="./pics/random-guy2.jpg" alt="">
-            <p>Sheldon Cooper</p>
-            <p>Physics</p>
-            <p>“Nowadays, colleagues tell me that their students always ask, 'Are we going to use Piazza?' It's sort of
-                an expected thing now.”</p>
-        </div>
+
 
     </div>
 
     <!-- maybe later -->
     <div class="piazza-subjects">
 
-    </div>
 
-    <div class="our-story">
-        <p>Our story</p>
-        <div class="story-container-inner">
-            <video src="https://www.youtube.com/watch?v=w731NM9fsCc&ab_channel=TechCrunch"></video>
-            <p>Piazza is designed to connect students, TAs, and professors so every student can get the help they need
-                when they need it.</p>
-            <p>Today, millions of students across thousands of campuses are using Piazza for their classes. It warms me
-                to think I started something that is impacting the way students learn and the way instructors teach.</p>
-            <p>I sincerely hope Piazza enhances your experience as a student, as a TA, and as a professor.</p>
-            <p>— Pooja Nath Sankar, Piazza Founder & CEO</p>
+        <p class="subject-first-line">Piazza works with your favorite subjects.</p>
+        <p class="subject-second-line">Click on a subject to view</p>
+        <div class="subject-icons">
+
+            <a href="https://piazza.com/subjects/math" target="_blank"><img src="./pics/math.png" alt="Mathamatics"
+                    class="subject-icon" id="math-icon">
+                <p class="subject-text">Mathamatics</p>
+            </a>
+            <a href="https://piazza.com/subjects/computer_science" target="_blank"><img
+                    src="./pics/computer-science.png" alt="Computer Science" class="subject-icon"
+                    id="computer-science-icon">
+                <p class="subject-text">Computer Science</p>
+            </a>
+            <a href="https://piazza.com/subjects/engineering" target="_blank"><img
+                    src="./pics/engineering-management.png" alt="Engineering" class="subject-icon"
+                    id="engineering-icon">
+                <p class="subject-text">Engineering</p>
+            </a>
+            <a href="https://piazza.com/subjects/physics" target="_blank"><img src="./pics/physics.png" alt="Physics"
+                    class="subject-icon" id="physics-icon">
+                <p class="subject-text">Physics</p>
+            </a>
+            <a href="https://piazza.com/subjects/biology" target="_blank"><img src="./pics/biology.png" alt="Biology"
+                    class="subject-icon" id="biology-icon">
+                <p class="subject-text">Biology</p>
+            </a>
+            <a href="https://piazza.com/subjects/chemistry" target="_blank"><img src="./pics/chemistry.png"
+                    alt="Chemistry" class="subject-icon" id="chemistry-icon">
+                <p class="subject-text">Chemistry</p>
+            </a>
+            <a href="https://piazza.com/subjects/economics" target="_blank"><img src="./pics/economy.png" alt="Economy"
+                    class="subject-icon" id="economy-icon">
+                <p class="subject-text">Economics</p>
+            </a>
+            <a href="https://piazza.com/subjects/psychology" target="_blank"><img src="./pics/psychology.png"
+                    alt="Psychology" class="subject-icon" id="psychology-icon">
+                <p class="subject-text">Psychology</p>
+            </a>
+
+
         </div>
 
 
     </div>
+
 
 
 
@@ -134,26 +221,60 @@
     <div class="in-the-news">
 
 
-        <p>In the news</p>
+        <p class="news-title">Piazza in the news</p>
         <div class="media-icons">
-            <img src="./pics/Entrepreneur_logo.png" alt="Entrepreneur_logo">
-            <img src="./pics/New_York_Times_logo_variation.jpg" alt="New_York_Times_logo_variation">
-            <img src="./pics/Forbes_logo.svg.png" alt="Forbes_logo">
-            <img src="./pics/NPRLogo_CMYK.jpg" alt="NPRLogo_CMYK">
-            <img src="./pics/Fortune_logo_logotype.png" alt="Fortune_logo_logotype">
-            <img src="./pics/chronicle.png" alt="chronicle">
-            <img src="./pics/US-News-logo.png" alt="US-News-logo">
+            <div>
+                <a href="https://www.entrepreneur.com/article/311719"> <img src="./pics/Entrepreneur_logo.png"
+                        alt="Entrepreneur_logo" class="media-icon" id="entrepreneur-logo"></a>
+            </div>
+            <div>
+                <a href="https://www.nytimes.com/2011/07/04/technology/04piazza.html">
+                    <img src="./pics/New_York_Times_logo_variation.jpg" alt="New_York_Times_logo_variation"
+                        class="media-icon" id="nyt-logo">
+                </a>
+
+            </div>
+            <div>
+                <a
+                    href="https://www.forbes.com/sites/meghancasserly/2012/09/18/mommy-ceo-pooja-sankar-on-raising-a-baby-a-business-and-a-new-school-of-role-models/?sh=5d07574e671c"></a>
+                <img src="./pics/Forbes_logo.svg.png" alt="Forbes_logo" class="media-icon" id="forbes-logo">
+            </div>
+            <div>
+                <a href="https://www.npr.org/2015/11/06/454970591/app-allows-shy-students-to-ask-questions-anonymously">
+                    <img src="./pics/NPRLogo_CMYK.jpg" alt="NPRLogo_CMYK" class="media-icon" id="npr-logo">
+                </a>
+            </div>
+            <div>
+                <a href="https://fortune.com/2015/04/20/the-pervasive-bias-against-female-computer-science-majors/">
+                    <img src="./pics/Fortune_logo_logotype.png" alt="Fortune_logo_logotype" class="media-icon"
+                        id="fortune-logo">
+                </a>
+            </div>
+            <div>
+                <a
+                    href="https://www.chronicle.com/article/students-endlessly-e-mail-professors-for-help-a-new-service-hopes-to-organize-the-answers/">
+                    <img src="./pics/chronicle.png" alt="chronicle" class="media-icon" id="chronicle-logo">
+
+                </a>
+            </div>
+            <div>
+                <a
+                    href="https://www.usnews.com/news/stem-solutions/articles/2015/05/05/op-ed-what-more-universities-can-do-to-help-female-and-minority-stem-students-succeed">
+                    <img src="./pics/US-News-logo.png" alt="US-News-logo" class="media-icon" id="us-news-logo"></a>
+            </div>
 
         </div>
     </div>
 
     <footer>
-        <a href="#"><img src="./pics/fblogo.png" alt="fblogo"></a>
-        <a href=""><img src="./pics/twitterlogo.png" alt="twitterlogo"></a>
+        <a href="https://www.facebook.com/Piazzza/"><img src="./pics/fblogo.png" alt="fblogo" id="fblogo"></a>
+        <a href="https://twitter.com/piazza"><img src="./pics/twitterlogo.png" alt="twitterlogo" id="twitterlogo"></a>
         <p>Copyright &copy 2021</p>
         <p>Piazza Technologies</p>
         <p>All Rights Reserved</p>
     </footer>
+
+
 </body>
 
 </html>
