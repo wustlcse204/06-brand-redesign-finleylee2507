@@ -6,7 +6,6 @@ body {
 
 html, body {
     height: 100%;
-    
 }
 
 a {
@@ -18,15 +17,13 @@ a {
     /* float:left; */
     height: 80px;
     margin-top: -20px;
-    margin-right:5%;
-    margin-left:1%;
+    margin-right: 5%;
+    margin-left: 1%;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-around;
-    
-    
     background-color: #fff;
     width: 100%;
     height: 45px;
@@ -34,33 +31,29 @@ header{
     border-bottom: 1px solid rgba(36, 35, 35, 0.098);
     top: 0;
     left: 0;
-    right:0;
+    right: 0;
     padding: 14px 2px 14px 2px;
     z-index: 3;
     text-align: center;
 }
 
 .nav-bar-group1 {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-   width:60%;
-    
+    width: 60%;
 }
 
-.nav-bar-group2{
-    display:flex;
-    gap:10px;
+.nav-bar-group2 {
+    display: flex;
+    gap: 10px;
 }
 
 .nav-bar-link {
     /* float:left; */
     font-size: 20px;
     font-weight: 800;
-    margin-right:3%;
-  
-    
+    margin-right: 3%;
 }
-
 
 .signup-login-button {
     border: 1px solid rgb(103, 174, 240);
@@ -71,14 +64,11 @@ header{
     cursor: pointer;
     margin-top: -5px;
     height: 40px;
-  
 }
-
 
 .landing-page {
     background-image: url('./pics/light-blue-background2.jpg');
     position: absolute;
-
     left: 0;
     right: 0;
     top: 45px;
@@ -186,7 +176,7 @@ p#why-piazza {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    gap:50px;
+    gap: 50px;
 }
 
 .story-image {
@@ -289,7 +279,7 @@ p#why-piazza {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 .media-icons div {
@@ -344,85 +334,137 @@ footer {
     background-color: rgb(35, 49, 59);
     padding-top: 40px;
     padding-bottom: 40px;
-  position: absolute;
-  left:0;
-  width:100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 
-footer p{
-    color:#ffffff;
+footer p {
+    color: #ffffff;
 }
-
 
 /* for smaller screens  */
-@media screen and (min-width: 1094px) and (max-width:1260px)  {
-    
-.nav-bar-link{
-    font-size:16px;
+
+@media screen and (min-width: 1094px) and (max-width:1260px) {
+    .nav-bar-link {
+        font-size: 16px;
+    }
+    header {
+        height: 30px;
+    }
+    #piazza-logo {
+        height: 60px;
+        position: relative;
+        top: 4px;
+    }
+    .signup-login-button {
+        border: 1px solid rgb(103, 174, 240);
+        border-radius: 3px;
+        padding: 3px 10px;
+        background-color: rgb(134, 188, 238);
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: -5px;
+        height: 30px;
+    }
 }
 
-header{
-    height:30px;
+@media screen and (max-width:1094px) and (min-width:790px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+        text-align: center;
+        align-items: center;
+    }
+    #piazza-logo {
+        margin-top: 0px;
+    }
+    .nav-bar-group1 {
+        width: 100%;
+    }
+    .nav-bar-group2 {
+        margin-top: 30px;
+    }
+    .landing-page {
+        top: 200px;
+        height: 80rem;
+    }
+    .landing-page-inner-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing-page-video {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+    .user-stories {
+        margin-top: 100rem;
+    }
 }
 
-#piazza-logo{
-    height:60px;
-  
-   position: relative;
-    top: 4px;
-}
+@media screen and (max-width:790px) {
+    header {
+        display: flex;
+        position: static;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+        text-align: center;
+        align-items: center;
+    }
+    #piazza-logo {
+        margin-top: 0px;
+    }
+    .nav-bar-group1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar-link {
+        background-color: #e9e9e9;
+    }
+    .nav-bar-group2 {
+        margin-top: 30px;
+        margin-left: -10px;
+    }
+    .landing-page {
+        top: 340px;
+        height: 90rem;
+    }
+    .landing-page-inner-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing-page-video {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+    .user-stories {
+        margin-top: 100rem;
+    }
+    .landing-page-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-stories {
+        margin-top: 100rem;
+    }
+    .story-image {
+        width: 80%;
+    }
+    .story-overlay {
+        display: none;
+    }
+    .subject-icon {
+        width: 5rem;
+        margin: 0rem;
+    }
+    #computer-science-icon {
+        width: 4rem;
+    }
 
-.signup-login-button {
-    border: 1px solid rgb(103, 174, 240);
-    border-radius: 3px;
-    padding: 3px 10px;
-    background-color: rgb(134, 188, 238);
-    font-weight: 700;
-    cursor: pointer;
-    margin-top: -5px;
-    height: 30px;
-}
-
-}
-
-@media screen and (max-width:1094px){
-header{
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: space-around;
-    height:200px;
-    text-align: center;
-   align-items: center;
-    
-}
-
-#piazza-logo{
-    margin-top:0px;
-}
-
-.nav-bar-group1{
-    width:100%;
-}
-.nav-bar-group2{
-    margin-top:30px;
-}
-.landing-page{
-    top:200px;
-    height:80rem;
-}
-
-.landing-page-inner-wrapper {
-    flex-direction: column;
-    align-items: center;
-}
-
-.landing-page-video{
-    width:80%;
-    margin-bottom: 100px;
-}
-
-.user-stories{
-    margin-top: 100rem;
-}
+   
 }
