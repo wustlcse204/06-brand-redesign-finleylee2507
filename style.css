@@ -153,6 +153,7 @@ p#why-piazza {
 .landing-page-video iframe {
     height: 100%;
     width: 100%;
+    border:0px;
 }
 
 #user-stories-first-line {
